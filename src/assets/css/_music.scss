@@ -1,0 +1,52 @@
+.music_container{
+    padding: 0.9em 0;
+    p{
+        padding:0.5em 0;
+    }
+
+    .music_items{
+        @include grid(3);
+        gap:2em;
+
+        .music_content{
+            box-shadow: 2px 2px 3px $accent-color;
+            border-radius:16px;
+
+            .image{
+                @include flex_center;
+                align-items: center;
+                padding:0.2em 0;
+
+                img{
+                    width: 90%;
+                    border-radius: 16px;
+                    height: 35vh;
+                }
+            }
+            .music_text{
+                @include flex_center;
+                flex-direction: row;
+                padding:0.9em 0;
+                justify-content: space-around;
+              
+                .btn{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (width <=726px) {
+    .music_container{
+        p,span{
+            font-size: 1.3em;
+        }
+        button{
+            font-size: 1.2em;
+        }
+    }
+}

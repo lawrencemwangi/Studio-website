@@ -1,0 +1,33 @@
+$primary-color:#040305;
+$secondary-color:#fff;
+$accent-color:#cccccc;
+$brand-color:#F98A00;
+
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Segoe UI', Tahoma,sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background:$primary-color ;
+    color:$secondary-color;
+}
+
+.main_container{
+    margin: 0 0 2em;
+    padding: 4.5em 3%;
+}
+
+.title{
+    color:$brand-color;
+}
+
+button{
+    padding:0.7em 0.9em;
+    background: $brand-color;
+    border-radius:8px;
+    border: none;
+    cursor: pointer;
+}

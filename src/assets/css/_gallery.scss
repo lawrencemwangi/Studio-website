@@ -1,0 +1,30 @@
+.gallery_container{
+    @include grid(3);
+
+    .gallery_image{
+        padding:0.9em 0;
+        transition: scale 0.5s ease-in-out;
+        img{
+            width: 85%;
+            height: 65vh;
+            border-radius: 28px;
+
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+@media screen and (width <=726px) {
+    .gallery_container{
+        padding: 0.9em 0;
+        .gallery_image{
+            display: flex;
+            justify-content: center;
+            img{
+                width: 95%;
+            }
+        }
+    }
+}

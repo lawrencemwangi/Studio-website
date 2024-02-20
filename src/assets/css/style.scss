@@ -1,0 +1,17 @@
+//global styles
+@import 'global';
+@import 'mixins';
+
+
+//partilas styes
+@import 'nav';
+@import 'footer';
+
+
+//main styles 
+@import 'hero';
+@import 'about';
+@import 'music';
+@import 'service';
+@import 'gallery';
+@import 'contact';

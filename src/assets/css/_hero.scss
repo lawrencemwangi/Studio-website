@@ -1,0 +1,56 @@
+.hero_container{
+    @include grid(2);
+
+    .hero_content{
+        h1{
+            padding:0.9em 0;
+            font-size: 2.5em;
+            margin-bottom: 5%;
+        }
+        p{
+            font-size: 1.3em;
+            margin-bottom: 18%;
+        }
+        .buttons{
+            @include flex_center;
+            flex-direction: row;
+            justify-content: left;
+            gap:2em;
+
+            button{
+                &:last-child{
+                    background: $accent-color;
+                }
+            }
+        }
+    }
+    .hero_image{
+        img{
+            height: 90vh;
+            width: 100%; 
+            object-fit: contain; 
+        }
+    }
+}
+
+@media screen and (width <= 726px){
+    .hero_container{
+        background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../images/guitar.png);
+        background-repeat:no-repeat;
+        background-size:contain;
+        background-position:center;
+        height: 68vh;
+        .hero_content{
+            h1{
+                font-size: 1.8em;
+            }
+            p{
+                font-size: 1.2em;
+                font-weight: 500;
+            }
+        }
+        .hero_image{
+            display: none;
+        }
+    }
+}
